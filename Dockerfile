@@ -7,6 +7,9 @@ FROM node:16-alpine
 # Select working directory
 WORKDIR /usr/src/app
 
+# Disable npm update message
+RUN npm config set update-notifier false
+
 # Install app dependencies
 COPY package*.json ./
 RUN npm ci
