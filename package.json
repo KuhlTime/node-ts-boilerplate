@@ -11,8 +11,8 @@
     "start": "node ./dist/app.js",
     "build": "tsc && tsc-alias",
     "build:watch": "tsc -w & tsc-alias -w",
-    "test": "jest",
-    "test:watch": "jest --watch",
+    "test": "jest --passWithNoTests",
+    "test:watch": "jest --watch --passWithNoTests",
     "test:coverage": "jest --coverage",
     "prepare": "husky install"
   },
